@@ -1,4 +1,6 @@
-FROM arm32v7/ubuntu:14.04
+FROM amd64/ubuntu:20.04
+
+ENV DEBIAN_FRONTEND noninteractive
 
 RUN apt-get update \
  && apt-get install -y openssh-server bash git vim lighttpd libcgi-pm-perl busybox-syslogd \
